@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Список дел</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css" >
+</head>
+<body class="bg-light">
+  <div class="container">
+    <div class="row pt-5">
+      <section class="col-md order-md-2 new-note">
+        <h2 class="h5 mb-4">Добавить новое дело</h2>
+
+        <form class="needs-validation px-5 pt-4 pb-5 mb-4 bg-white" id="newNote" method="post" action="#">
+          <div class="form-group mb-4">
+            <label class="text-muted control-label" for="titleNote">Название</label>
+            <input class="form-control bg-light rounded-0" id="titleNote" name="titleNote" type="text" maxlength="24">
+          </div>
+
+          <div class="form-group mb-4">
+            <label class="text-muted control-label" for="description">Описание</label>
+            <textarea class="form-control bg-light rounded-0" id="description" name="description" rows="10"></textarea>
+          </div>
+
+          <button class="btn btn-primary px-5 py-3 rounded-0" type="submit">Добавить дело</button>
+        </form>
+      </section>
+
+      <section class="col-md order-md-1">
+        <h1 class="h5 mb-5">Список дел:</h1>
+
+        <p class="text-muted" id="listEmpty">Список пуст...</p>
+
+        <ul class="list-group list-group-flush" id="listItem"></ul>
+      </section>
+    </div>
+  </div>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>
